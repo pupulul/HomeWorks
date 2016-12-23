@@ -1,0 +1,471 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	overflow-x:hidden;
+}
+
+/*header*/
+header{
+	width: 100%;
+}
+header div{
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+header .topBack{
+	width: 100%;
+	/*background-color: lightgreen;*/
+	position: absolute;
+	border: 1px solid #ccc;
+}
+header .topLeft{
+	/*background-color: lightblue;*/
+	position: relative;
+}
+header .topRight{
+	/*background-color: lightyellow;*/
+	position: relative;
+	float: right;
+	display: block;
+	padding:0;
+	padding-right: 10px;
+}
+
+header .topLeft .topTemp b{
+	color:blue;
+}
+header .topLeft .topTemp span{
+	font-size: 11px;
+}
+header .topLeft .topChange a{
+	margin-left: 10px;
+	font-size: 11px;
+	color: black;
+}
+
+header .topRight a{
+	margin:0 10px;
+	font-size: 12px;
+	color: black;
+}
+
+header .topRight .blue{
+	margin:0;
+	display: inline-block;
+	width: 100px;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	top: 1px;
+	right: 0;
+
+}
+
+header .disappear{
+	width: 100px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	background-color: #f9f9f9;
+	display: none;
+}
+
+
+header .disappear .list{
+	display: block;
+	height: 76px;
+	width: 66px;
+	font-size: 12px;
+	line-height: 14px;
+	margin:0 auto;
+	margin-top: 15px;
+	color: #666;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
+
+header .disappear .list img{
+	display: block;
+	margin:auto;
+}
+
+
+article .middleLogo{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	left: 50%;
+}
+article .middleLogo img{
+	width: 270px;
+	height: 129px;
+	position: relative;
+	left: -135px;
+	top: 30px;
+}
+
+article .middleSpan{
+	width: 60%;
+	background-color: blue;
+	margin:0 auto;
+	position: relative;
+}
+
+article .middleSpan .middleText{
+	display: inline-block;
+	height: 40px;
+	width: 80%;
+	outline: none;
+	padding-left: 5px;
+	float: left;
+}
+
+article .middleSpan .middleButton{
+	display: inline-block;
+	height: 44px;
+	width: 15%;
+	float: left;
+	border: none;
+	background-color: blue;
+	color: white;
+	font-size: 16px;
+}
+
+article .middleSpan .middleIcon{
+	position: absolute;
+	right: 20%;
+	top: 10px;
+}
+article .middleSpan .middleIcon span{
+	float: left;
+}
+article .middleSpan .middleIcon .iconLeft{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	background-image: url(../img/mini.png?__sprite);
+}
+
+article .middleSpan .middleIcon .iconMiddle{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 30px;
+	color: #ccc;
+}
+article .middleSpan .middleIcon .iconRight{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	background-image: url(../img/mini_2.png?__sprite);
+}
+
+
+article .middleChange{
+	display: none;
+	width: 100%;
+	background-color: white;
+	height: 286px;
+	position: absolute;
+	top: 0;
+	border-bottom: 1px solid #ccc;
+}
+article .middleChange .middleContainer{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	height: 40px;
+}
+
+article .middleChange .middleContainer .inner{
+	width: 70%;
+	margin: 0 auto;
+}
+
+article .middleChange .middleContainer .changeNav span{
+	display: inline-block;
+	float: left;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	padding:0 5px;
+	cursor: pointer;
+}
+
+article .middleChange .middleContainer .changeNav .changeNavFocus{
+	background-color: blue;
+	color: white;
+}
+
+article .middleChange .middleContainer .changeOption div{
+	float: right;
+	font-size: 14px;
+	line-height: 40px;
+}
+article .middleChange .middleContainer .changeOption .changeNone{
+	font-size: 14px;
+	margin-right: 10px;
+	display: none;
+	cursor: pointer;
+}
+article .middleChange .middleContainer .changeOption .changeClose{
+	color: blue;
+	cursor: pointer;
+}
+article .middleChange .changePage{
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+article .middleChange .changePageFocus{
+	display: block;
+}
+article .middleChange .changePage .inner{
+	width: 70%;
+	margin: 0 auto;
+}
+article .middleChange .changePage .inner img{
+	margin-left: auto;
+	width: 160px;
+	height: 80px;
+	float:left;
+	cursor: pointer;
+	margin: 1px;
+}
+article .middleChange .changePage .inner .big{
+	width: 320px;
+	height: 160px;
+	margin:2px;
+}
+
+
+
+article .container{
+	margin-top: 100px;
+	width: 70%;
+	margin-left:auto;
+	margin-right: auto;
+	border: 1px solid #ccc;
+}
+
+article .container .middleNav{
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	height: 40px;
+}
+
+article .container .middleNav span{
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	list-style: none;
+	float: left;
+	font-size: 14px;
+}
+
+article .container .content{
+	width: 100%;
+	display: none;
+	background-color: white;
+	border-bottom: 1px solid #CCC;
+}
+
+.navFocus{
+	background-color: #ccc;
+	color: white;
+}
+article .container .contentFocus{
+	display: block;
+}
+
+ul li{
+	list-style: none;
+	font-size: 14px;
+	color: black;
+	line-height: 40px;
+	text-align: left;
+}
+
+article .container .content .contentFather{
+	display: inline-block;
+	padding-left: 10px;
+	width: 100%;
+	line-height: 40px;
+	height: 280px;
+}
+
+article .container .content .contentFather b{
+	display: inline-block;
+	width: 60px;
+}
+article .container .content .contentFather span{
+	cursor: pointer;
+}
+
+article .container .content .contentFather .contentFatherR{
+	float: right;
+	margin-right: 10px;
+	display: none;
+}
+article .container .content .contentFather .contentFatherR a{
+	margin-right: 10px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+article .container .content .contentFather li{
+	display: block;
+	border-bottom: 1px solid #ccc;
+	margin-right: 20px;
+}
+article .container .content .contentFather li span{
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	background-image: url(../img/95494.png?__sprite);
+	background-repeat: no-repeat;
+	background-position: 0 12px;
+	padding-left: 24px;
+}
+
+article .container .content .tuijian a{
+	display: block;
+	height: 60px;
+	font-size: 16px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+	padding-left: 10px;
+	text-decoration: none;
+}
+article .container .cnxh{
+	height: 700px;
+	width: 100%;
+}
+article .container .cnxh span{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+}
+article .container .content .tx{
+	width:125px;
+	height: 70px;
+	background:#ccc;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	float: left;
+}
+article .container .content .tx img{
+	width: 115px;
+	height: 70px;
+}
+
+article .container .video{
+	height: 600px;
+}
+
+article .container .content .bigm{
+	float: left;
+	width: 195px;
+	height: 310px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right:0;
+	background-color: #f5f5f5;
+}
+article .container .content .bigm .float span{
+	float: left;
+}
+article .container .content .bigm span{
+	font-size: 11px;
+	height: 13px;
+	line-height: 13px;
+}
+article .container .content .bigm .float{
+	padding-left: 5px;
+}
+article .container .content .bigm .float .point{
+	display: inline-block;
+	width: 53px;
+	background-image: url(../img/star.png?__sprite);
+	background-repeat: repeat-x;
+	background-position: 0 -13px;
+}
+article .container .content .bigm .float .point2{
+	display: inline-block;
+	width: 13px;
+	background-image: url(../img/star.png?__sprite);
+	background-repeat: repeat-x;
+}
+
+article .container .content .bigm .float .point3{
+	padding-top: 2px;
+}
+
+article .container .content .movie{
+	float: left;
+	width: 195px;
+	height: 145px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 0;
+	background-color:#f5f5f5;
+	position: relative;
+}
+
+article .container .content .movie span{
+	position: relative;
+	bottom: 35px;
+	right: -85px;
+	color: white;
+	font-size: 12px;
+}
+article .container .content .movie img{
+	display: block;
+}
+article .container .content .movie a{
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+
+footer{
+	width: 100%;
+	font-size: 12px;
+	color: #ccc;
+	margin-top: 10px;
+	text-align: center;
+	position: relative;
+	top: 10px;
+}
+footer a{
+	color: #ccc;
+}
+
+.return{
+	width: 40px;
+	height: 40px;
+	background-color: #ccc;
+	position: fixed;
+	right: 10%;
+	bottom: 10px;
+	display: none;
+	text-align: center;
+	font-size: 16px;
+}
+.return img{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}

@@ -1,0 +1,1 @@
+require.config({baseUrl:"js/app/",paths:{jquery:"../tool/jquery-3.0.0.min"}}),require(["hover","tab"],function(){}),require(["swiper","jquery"],function(r,e){var p=e(".swiper1"),i=e(".swiper2"),s=e(".swiper3"),w=e(".swiper4"),u=e(".swiper5");r.swiper(p,!0,1,"-65px"),r.swiper(i,!1,3,"-52px"),r.swiper(s,!1,6,"-65px"),r.swiper(w,!1,7,"-65px"),r.swiper(u,!1,6,"-65px")});

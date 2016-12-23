@@ -1,0 +1,105 @@
+/*reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*设置整体的文字在块内居中展示*/
+div {
+    line-height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+/*整体分页布局*/
+.col {
+    -webkit-column-count: 2;
+}
+/*三个基本盒子元素设置*/
+.first {
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+}
+
+.second {
+    height: 100px;
+    width: 100px;
+    background-color: lightcyan;
+}
+
+.third {
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+}
+/*／三个基本盒子元素设置*/
+
+/*普通盒子模型*/
+.neirong {
+    height: 100px;
+    width: 100px;
+    background-color: lightgoldenrodyellow;
+    overflow: scroll;
+}
+
+.hezi {
+    margin: 100px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: darkgrey;
+    border: 5px solid red;
+}
+
+/*怪异盒子模型*/
+.neirong2 {
+    height: 100px;
+    width: 100px;
+    background-color: lightgoldenrodyellow;
+    overflow: hidden;
+}
+
+.hezi2 {
+    margin: 100px;
+    padding: 10px;
+    height: 130px;
+    width: 130px;
+    background-color: darkgrey;
+    border: 5px solid red;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 3px 3px lightgray;
+}
+
+
+
+
+/*水平布局*/
+.webkit_flex {
+    padding: 100px;
+    display: -webkit-flex;
+}
+
+/*垂直布局*/
+.webkit_flex2 {
+    padding: 100px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+
+/*排序*/
+.webkit_flex3 {
+    padding: 100px;
+    display: -webkit-flex;
+}
+
+.webkit_flex3 div:nth-child(3) {
+    -webkit-order: -1;
+}
+
+
+/*旧版居中*/
+.middle {
+    height: 1000px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}

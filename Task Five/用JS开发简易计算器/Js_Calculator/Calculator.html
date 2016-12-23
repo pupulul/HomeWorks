@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 北京 张曦 2016.6.15 -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/Calculator.css" type="text/css">
+</head>
+
+<body>
+	<!-- 容器 -->
+    <div class="container">
+        <h1>Calculator</h1>
+        <input type="number" id="first" class="form-control" placeholder="请输入一个数字">
+        <input type="number" id="second" class="form-control" placeholder="请输入一个数字">
+        <p>请点击需要进行的运算符</p>
+        <p id="result">结果将显示在这里</p>
+        <button onclick="math('+')" class="btn btn-default">+</button>
+        <button onclick="math('-')" class="btn btn-default">-</button>
+        <button onclick="math('*')" class="btn btn-default">*</button>
+        <button onclick="math('/')" class="btn btn-default">/</button>
+    </div>
+    <!-- ／容器 -->
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/Calculator.js"></script>
+</body>
+
+</html>

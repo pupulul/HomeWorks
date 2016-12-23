@@ -1,0 +1,98 @@
+/*素材宽度640px，所以设置body宽度*/
+
+body{
+	width: 640px;
+	background-color: #CCC;
+}
+/*顶部*/
+.m_top{
+	width: 100%;
+	height: 127px;
+	background:url(../img/m_top.gif) no-repeat;
+}
+/*横幅*/
+.m_banner{
+	height: 270px;
+	background: url(../img/m_banner.gif) no-repeat;
+}
+
+/*导航条*/
+.m_nav a{
+	display: block;
+	height: 176px;
+	width: 160px;
+	float: left;
+	cursor: pointer;
+}
+/*四个方块*/
+.m_nav .geren{
+	background: url(../img/m_nav.gif) no-repeat;
+}
+.m_nav .wuliu{
+	background: url(../img/m_nav.gif) no-repeat;
+	background-position: -160px 0%;
+}
+.m_nav .chongzhi{
+	background: url(../img/m_nav.gif) no-repeat;
+	background-position: -320px 0%;
+}
+.m_nav .leimu{
+	background: url(../img/m_nav.gif) no-repeat;
+	background-position: -480px 0%;
+}
+
+/*shopping*/
+.m_shopping{
+	margin-top: 200px;
+	height: 311px;
+	width: 640px;
+}
+
+.m_shopping a{
+	float: left;
+	cursor: pointer;
+}
+.m_shopping .jjhx{
+	width: 320px;
+	height: 311px;
+	background: url(../img/m_shopping.gif) no-repeat;
+}
+
+.m_shopping .yhh{
+	height: 154px;
+	width: 320px;
+	background: url(../img/m_shopping.gif) no-repeat;
+	background-position: 100% 0%;
+}
+
+.m_shopping .mrxp{
+	height: 157px;
+	width: 320px;
+	background: url(../img/m_shopping.gif) no-repeat;
+	background-position: 100% -154px;
+}
+
+/*guess*/
+
+.m_guess{
+	height: 221px;
+	width: 640px;
+	margin-top: 20px;
+}
+
+.m_guess strong{
+	display: block;
+	height: 50px;
+	font-size: 30px;
+	line-height: 50px;
+	padding-left: 15px;
+	background-color: #999;
+}
+
+.m_guess .adv{
+	display: block;
+	width: 640px;
+	height: 171px;
+	background: url(../img/m_guess.gif) no-repeat;
+	background-position: 0% -50px;
+}

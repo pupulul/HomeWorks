@@ -1,0 +1,625 @@
+/*html5*/
+
+article,
+header,
+footer {
+    display: block;
+}
+
+
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*值为0不写单位*/
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*有几个颜色用的统一样式*/
+
+.black {
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#blue {
+    background-color: #2E7BEF;
+}
+
+
+@media screen and (min-width: 769px){
+    .Pad{
+        display: none;
+    }
+    .Mobile{
+        display: none;
+    }
+    /*最外端容器*/
+    .PC {
+        height: 100%;
+        position: relative;
+        width: 100%;
+        min-width: 640px;
+        /*全品类最小宽度代码*/
+        _width: expression((document.documentElement.clientWidth||document.body.clientWidth)>1000?"1000px": "");
+        _width: 1000px;
+        /*ie6用下面那种*/
+    }
+    /*顶部盒子横向排列 向右对齐*/
+    .PC header {
+        display: -webkit-flex;
+        -webkit-justify-content: flex-end;
+        display: -moz-flex;
+        -moz-justify-content: flex-end;
+        display: -ms-flex;
+        -ms-justify-content: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        /*加入兼容性样式*/
+        width: 100%;
+        height: 40px;
+    }
+    .PC header .top_out {
+        float: right \9;
+        margin-right: 20px;
+    }
+    /*顶部9个盒子统一样式*/
+    .PC header .top_t {
+        font-size: 13px;
+        margin-top: 20px;
+        margin-left: -15px;
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        float: left;
+    }
+    /*右上角单独颜色*/
+    .PC header .top_t .white {
+        color: white;
+        overflow: hidden;
+    }
+    /*列表项*/
+    .PC #list ul li {
+        list-style: none;
+        display: none;
+    }
+    .PC #list .shadow {
+        display: none;
+        background: #fffffe;
+        －webkit-box-shadow: 1px 1px 2px 1px #000;
+        -moz-box-shadow: 1px 1px 2px 1px #000;
+        -ms-box-shadow: 1px 1px 2px 1px #000;
+        box-shadow: 1px 1px 2px 1px #000;
+        behavior: url(stylesheets/ie-css3.htc);
+        _font-size: 12px;
+        _position: absolute;
+        _width: 70px;
+        _text-align: center;
+        _top: 50px;
+        _right: 100px;
+        /*加入兼容性样式*/
+    }
+    .PC #list ul:hover li {
+        display: list-item;
+    }
+    .PC #list ul:hover .shadow {
+        display: block;
+    }
+    /*右侧列表*/
+    .PC .top_t ul li {
+        list-style: none;
+        display: none;
+    }
+    .PC .top_t ul:hover li {
+        display: block;
+    }
+    .PC .top_t ul:hover #in {
+        display: block;
+    }
+    .PC .top_t #in .right_t {
+        width: 66px;
+        height: 70px;
+        line-height: 70px;
+        vertical-align: middle;
+        color: black;
+    }
+    /*右侧列表打开框体*/
+    .pC #in {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 90px;
+        height: 100%;
+        scroll="no";
+        background-color: rgb(249, 249, 249);
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+        -moz-flex-direction: column;
+        display: -ms-flex;
+        -ms-flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        display: none;
+        /*加入兼容性样式*/
+        _position: absolute;
+        _top: 0px;
+        _right: 20px;
+        _width: 90px;
+        _height: 999px;
+    }
+    .PC .right_t img {
+        width: 40px;
+        height: 40px;
+    }
+    /*中间核心部分*/
+    /*这些部分用来调整中间区域的位置*/
+    .PC article {
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        display: -moz-flex;
+        -moz-justify-content: center;
+        display: -ms-flex;
+        -ms-justify-content: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        /*加入兼容性样式*/
+    }
+    .PC article .packet {
+        margin-top: 20px \9;
+        height: 600px;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+        -moz-flex-direction: column;
+        display: -ms-flex;
+        -ms-flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        /*加入兼容性样式*/
+    }
+    .PC article .packet .img_center {
+        width: 100%;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        display: -moz-flex;
+        -moz-justify-content: center;
+        display: -ms-flex;
+        -ms-justify-content: center;
+        display: flex;
+        justify-content: center;
+        /*加入兼容性样式*/
+        position: relative \9;
+        left: 50% \9;
+        clear: both \9;
+    }
+    /*IE7&8中 可以用position的方式实现居中 上面一段写在 子元素中 下面一段写在孙元素中*/
+    /*百度logo部分*/
+    .PC article .packet .img_center .mi_img {
+        margin-top: 30px;
+        position: relative \9;
+        left: -135px \9;
+    }
+    .PC article .packet .img_center .mi_img img {
+        width: 270px;
+        height: 129px;
+    }
+    /*百度输入框和按钮部分*/
+    .PC article .packet .mi_input {
+        width: 800px;
+        height: 40px;
+        margin-top: 10px;
+        padding: 0px;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        display: -moz-flex;
+        -moz-justify-content: center;
+        display: -ms-flex;
+        -ms-justify-content: center;
+        display: flex;
+        justify-content: center;
+        /*加入兼容性样式*/
+        position: relative \9;
+        left: 50% \9;
+        clear: both \9;
+    }
+    .PC article .packet .mi_input span {
+        display: inline-block;
+        /*加入行内块级元素才会有宽和高*/
+        width: 602px;
+        height: 36px;
+        position: relative;
+        left: -301px \9;
+    }
+    .PC article .packet .mi_input .textarea {
+        width: 490px;
+        height: 14px;
+        border: 1px;
+        margin-left: -2px;
+        margin-right: -2px;
+        border: 1px solid #CCC;
+        outline: none;
+        padding: 10px 0;
+        padding-left: 10px;
+        /*通过添加padding可以调整光标的位置*/
+        float: left;
+    }
+    .PC article .packet .mi_input img {
+        width: 20px;
+        height: 20px;
+        z-index: 999;
+    }
+    .PC article .packet .mi_input .img_l {
+        position: absolute;
+        right: 140px;
+        top: 7px;
+        right: 140px \9;
+        top: 10px \9;
+        /*针对不同IE版本进行微调*/
+    }
+    .PC article .packet .mi_input .img_r {
+        position: absolute;
+        right: 110px;
+        top: 7px;
+        right: 110px \9;
+        top: 10px \9;
+    }
+    .PC article .packet .submit {
+        margin-left: -2px;
+        width: 100px;
+        height: 36px;
+        font-size: 16px;
+        color: #FFFFFF;
+        border: 0px;
+        outline: none;
+        cursor: pointer;
+        float: left;
+    }
+    /*新加入的样式 focus*/
+    .PC article .packet .mi_input .textarea:focus {
+        border-color: blue;
+    }
+    .PC article .packet .mi_input .textarea:hover {
+        border-color: black;
+    }
+    .PC article .packet .mi_input span #blue:hover {
+        background-color: #1C65D4;
+    }
+    /*底部*/
+    .PC footer {
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        display: -moz-flex;
+        -moz-justify-content: center;
+        display: -ms-flex;
+        -ms-justify-content: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 20px;
+        width: 100%;
+        /*加入兼容性样式*/
+    }
+    /*所有块设置高度和间距*/
+    .PC footer div {
+        margin: 5px;
+        height: 100px;
+    }
+    .PC footer div .grey {
+        color: rgb(149, 149, 149);
+        font-size: 12px;
+    }
+    .PC footer div img {
+        height: 70px;
+        line-height: 100px;
+        vertical-align: middle;
+    }
+    /*最后一块*/
+    .PC footer .footer_out {
+        font-size: 10px;
+        color: rgb(149, 149, 149);
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+        -moz-flex-direction: column;
+        display: -ms-flex;
+        -ms-flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        /*加入兼容性样式*/
+    }
+    .PC footer .footer_out img {
+        height: 12px;
+        width: 10px;
+    }
+    .PC footer .footer_out .footer_in {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        /*加入兼容性样式*/
+        height: 20px;
+    }
+    /*此后5个是加入兼容IE的样式*/
+    .PC .footer_in div {
+        float: left;
+        height: 20px;
+        margin: 0px 20px;
+    }
+    .PC footer .footer_out #f_in_he {
+        height: 20px;
+        text-align: left;
+    }
+    .PC footer .f_c_o {
+        float: left \9;
+        position: relative \9;
+        left: 50% \9;
+        clear: both \9;
+        _position: relative;
+        _left: 50%;
+        _clear: both;
+    }
+    .PC footer .f_c_o .f_c {
+        position: relative \9;
+        left: -50% \9;
+        _position: relative;
+        _left: -20%;
+        _clear: both;
+    }
+    .PC footer .f_c_o .f_c #f_f {
+        float: left;
+        height: 70px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 425px){
+    .PC{
+        display: none;
+    }
+    .Mobile{
+        display: none;
+    }
+    body{
+        background-color: #eeeff0;
+    }
+
+    .Pad{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Pad header .top_weather div {
+        float: left;
+    }
+    
+    .Pad header .top_weather .top_middle{
+        width: 100%;
+    }
+    .Pad header .top_weather .top_middle .top_middle_inner{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .Pad header .top_weather .top_left{
+
+        margin-left: -100%;
+    }
+    .Pad header .top_weather .top_right{
+
+        width: 80px;
+        margin-left: -80px;
+    }
+
+    .Pad header .middle_input{
+        padding:0 5px;
+    }
+    .Pad header .middle_input input{
+        width: 500px;
+        height: 30px;
+        padding-left: 3px;
+        outline: none;
+        float: left;
+    } 
+    .Pad header .middle_input input:focus {
+        border-color: brown;
+    }
+
+    .Pad header .middle_input .submit{
+        width: 80px;
+        height: 34px;
+        outline: none;
+        border:none;
+        float: left;
+    }
+
+    .Pad header .bottom_list{
+        width: 600px;
+    }
+
+    .Pad header .bottom_list div{
+        height: 50px;
+        width: 100px;
+        border: none;
+        outline: none;
+        background-color: none;
+        float: left;
+        line-height: 50px;
+        text-align: center;
+    }
+    .Pad article .hot{
+        height: 200px;
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        float: left;
+        color:#999;
+        padding: 10px;
+    }
+    .Pad article .tuijian{
+        height:300px;
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        float: left;
+        color: #999;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .Pad article .fuwu{
+        height:100px;
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        float: left;
+        color: #999;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+}
+/*这里临界点要分开设置，否则会出现临界点样式全丢的情况*/
+@media screen and (max-width: 424px){
+    .PC{
+        display: none;
+    }
+    .Pad{
+        display: none;
+    }
+
+    body{
+        background-color: #eeeff0;
+    }
+
+    .Mobile{
+
+        margin-left: 5px;
+        margin-right: 5px;
+        min-width: 345px;
+    }
+
+    .Mobile header .top_weather div {
+        float: left;
+    }
+    
+    .Mobile header .top_weather .top_middle{
+        width: 100%;
+    }
+    .Mobile header .top_weather .top_middle .top_middle_inner{
+        width: 100%;
+
+        text-align: center;
+        
+    }
+    .Mobile header .top_weather .top_middle .top_middle_inner img{
+        width: 150px;
+        height: 60px;
+    }
+
+    .Mobile header .top_weather .top_left{
+        position: absolute;
+        top: 2px;
+        left: 5px;
+    }
+    .Mobile header .top_weather .top_right{
+        position: absolute;
+        top: 2px;
+        right: 5px;
+    }
+
+    .Mobile header .middle_input{
+        width: 100%;
+        padding:0 5px;
+        float: left;
+        height: 40px;
+        
+
+    }
+    .Mobile header .middle_input .input{
+
+        width: 73%;
+
+        margin-top: 10px;
+        height: 40px;
+        padding-left: 5px;
+        outline: none;
+        float: left;
+        margin:0;
+
+    } 
+    .Mobile header .middle_input input:focus {
+        border-color: brown;
+    }
+
+    .Mobile header .middle_input .submit{
+        width: 80px;
+        height: 44px;
+        outline: none;
+        border:none;
+        float: left;
+    }
+
+
+    .Mobile header .bottom_list div{
+        height: 50px;
+        width: 50px;
+        border: none;
+        outline: none;
+        background-color: none;
+        float: left;
+        line-height: 50px;
+        text-align: center;
+    }
+    .Mobile article .hot{
+        height: 200px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        float: left;
+        color:#999;
+        padding: 10px;
+    }
+    .Mobile article .tuijian{
+        height:300px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        float: left;
+        color: #999;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .Mobile article .fuwu{
+        height:100px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        float: left;
+        color: #999;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+
+
+}

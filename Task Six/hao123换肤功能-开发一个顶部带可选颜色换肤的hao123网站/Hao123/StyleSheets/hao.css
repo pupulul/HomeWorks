@@ -1,0 +1,69 @@
+/*没有细优化，设置一个最小宽度*/
+.container{
+	min-width: 1200px;
+}
+
+/*logo条*/
+.container header .top img{
+	width: 168px;
+	height:60px;
+}
+
+
+/*搜索引擎条*/
+.container header .search img{
+	width: 175px;
+	height: 40px;
+
+}
+
+.container header .search input{
+	height: 40px;
+	width: 400px;
+	margin-left: 20px;
+
+}
+
+.container header .search .btn{
+	height: 40px;
+	width: 120px;
+}
+
+
+
+/*nav条*/
+
+.container header nav a{
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: lightgreen;
+	color: #000;
+	text-decoration:none;
+}
+
+.container header nav a:hover{
+	color:white;
+}
+
+/*主体左侧*/
+.container article .left ul{
+	border: 1px solid grey;
+}
+
+.container article .left ul li{
+	margin-left: 5px;
+	margin-top: 5px;
+}
+/*主体右侧*/
+.container article .right{
+	border: 1px solid green;
+}
+.container article .right a{
+	margin-top: 10px;
+	color:black;
+}
+.container article .right a:hover{
+	color: orange;
+}

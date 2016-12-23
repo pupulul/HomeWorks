@@ -1,0 +1,150 @@
+//百分比
+@four_p: 40%;
+@two_p: 20%;
+@ten_p: 100%;
+@six_p: 60%;
+@eight_p: 80%;
+@seven_p: 70%;
+//骨架
+.out {
+    width: 800px;
+    height: 600px;
+}
+
+.out_three {
+    width: @ten_p;
+}
+
+.out_three_h {
+    &:extend(.out_three);
+    height: @four_p;
+}
+
+.out_three_a {
+    &:extend(.out_three);
+    height: @four_p;
+}
+
+.out_three_f {
+    &:extend(.out_three);
+    height: @two_p;
+}
+
+.article_inner {
+    height: 90%;
+    width: 90%;
+    &:extend(.position_r);
+    left: 5%;
+    top: 5%;
+}
+
+//宽高
+.width_six {
+    width: @six_p;
+}
+
+.width_fou {
+    width: @four_p;
+}
+
+.height_eig {
+    height: @eight_p;
+}
+
+.height_ten {
+    height: @ten_p;
+}
+
+.width_23_p {
+    &:extend(.article_text);
+    //width:100%/23;不好使，想不明白为啥，好使的是1/26；
+    width: 3.8%;
+}
+
+.height_sev {
+    height: @seven_p;
+}
+
+//漂浮
+.float_l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+//margin
+.m_l_10 {
+    margin-left: 10px;
+}
+
+.p_10 {
+    padding: 10px;
+}
+
+.m_5 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+//对齐
+.flex_c {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+}
+
+//杂项
+.article_text {
+    display: inline-block;
+}
+
+.display_inline {
+    display: inline-block;
+}
+
+//定位
+.position_r {
+    position: relative;
+}
+
+//箭头
+.ar_t {
+    &:extend(.display_inline);
+}
+
+.ar_b {
+    width: 10px;
+    height: 10px;
+    &:extend(.position_r);
+    left: 5px;
+    top: -15px;
+}
+
+.arrow_p {
+    &:extend(.position_r);
+    left: 0;
+    top: -26px;
+}
+
+.ar_l {
+    &:extend(.display_inline);
+    width: 8px;
+    height: 8px;
+    -webkit-transform: skew(20deg);
+    &:extend(.position_r);
+    left: 1px;
+}
+
+.ar_m {
+    &:extend(.display_inline);
+    width: @six_p;
+    height: 8px;
+}
+
+.ar_r {
+    &:extend(.display_inline);
+    &:extend(.position_r);
+    left: -21px;
+    top: -16px;
+}

@@ -1,0 +1,37 @@
+/*取消所有列表样式*/
+ul{
+	list-style: none;
+}
+
+/*导航条部分*/
+.navbar .navbar-inner{
+	padding-left: 5px;
+}
+
+.navbar .navbar-inner .collapse .login_in{
+	display: block;
+	line-height: 42px;
+	float: right;
+	margin-right: 5px;
+}
+
+
+/*主体部分*/
+
+.container-fluid{
+	margin-top: 20px;
+}
+.container-fluid .row-fluid .span3 .well {
+	text-align: center;
+}
+.container-fluid .row-fluid .span3 .well ul li a{
+	font-size: 22px;
+}
+.container-fluid .row-fluid .span3 .well ul li{
+	margin-top: 20px;
+	position: relative;
+	left: -10px;
+}
+
+
+

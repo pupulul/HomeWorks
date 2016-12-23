@@ -1,0 +1,452 @@
+/*html5*/
+
+article,
+header {
+    display: block;
+}
+
+
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*值为0不写单位*/
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*有几个颜色用的统一样式*/
+
+.black {
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#blue {
+    background-color: #2E7BEF;
+}
+
+
+/*最外端容器*/
+
+.All {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    min-width: 640px;
+    /*全品类最小宽度代码*/
+    _width: expression((document.documentElement.clientWidth||document.body.clientWidth)>1000?"1000px": "");
+    _width: 1000px;
+    /*ie6用下面那种*/
+}
+
+
+/*顶部盒子横向排列 向右对齐*/
+
+header {
+    display: -webkit-flex;
+    -webkit-justify-content: flex-end;
+    display: -moz-flex;
+    -moz-justify-content: flex-end;
+    display: -ms-flex;
+    -ms-justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    /*加入兼容性样式*/
+    width: 100%;
+    height: 40px;
+}
+
+header .top_out {
+    float: right \9;
+    margin-right: 20px;
+}
+
+
+/*顶部9个盒子统一样式*/
+
+header .top_t {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: -15px;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+
+
+/*右上角单独颜色*/
+
+header .top_t .white {
+    color: white;
+    overflow: hidden;
+}
+
+
+/*列表项*/
+
+#list ul li {
+    list-style: none;
+    display: none;
+}
+
+#list .shadow {
+    display: none;
+    background: #fffffe;
+    －webkit-box-shadow: 1px 1px 2px 1px #000;
+    -moz-box-shadow: 1px 1px 2px 1px #000;
+    -ms-box-shadow: 1px 1px 2px 1px #000;
+    box-shadow: 1px 1px 2px 1px #000;
+    behavior: url(stylesheets/ie-css3.htc);
+    _font-size: 12px;
+    _position: absolute;
+    _width: 70px;
+    _text-align: center;
+    _top: 50px;
+    _right: 100px;
+    /*加入兼容性样式*/
+}
+
+#list ul:hover li {
+    display: list-item;
+}
+
+#list ul:hover .shadow {
+    display: block;
+}
+
+
+/*右侧列表*/
+
+.top_t ul li {
+    list-style: none;
+    display: none;
+}
+
+.top_t ul:hover li {
+    display: block;
+}
+
+.top_t ul:hover #in {
+    display: block;
+}
+
+.top_t #in .right_t {
+    width: 66px;
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    color: black;
+}
+
+
+/*右侧列表打开框体*/
+
+#in {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 90px;
+    height: 100%;
+    scroll="no";
+    background-color: rgb(249, 249, 249);
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: -moz-flex;
+    -moz-flex-direction: column;
+    display: -ms-flex;
+    -ms-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    display: none;
+    /*加入兼容性样式*/
+    _position: absolute;
+    _top: 0px;
+    _right: 20px;
+    _width: 90px;
+    _height: 999px;
+}
+
+.right_t img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/*中间核心部分*/
+
+
+/*这些部分用来调整中间区域的位置*/
+
+article {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    display: -ms-flex;
+    -ms-justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /*加入兼容性样式*/
+}
+
+article .packet {
+    margin-top: 20px \9;
+    height: 600px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: -moz-flex;
+    -moz-flex-direction: column;
+    display: -ms-flex;
+    -ms-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    /*加入兼容性样式*/
+}
+
+article .packet .img_center {
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    display: -ms-flex;
+    -ms-justify-content: center;
+    display: flex;
+    justify-content: center;
+    /*加入兼容性样式*/
+    position: relative \9;
+    left: 50% \9;
+    clear: both \9;
+}
+
+
+/*IE7&8中 可以用position的方式实现居中 上面一段写在 子元素中 下面一段写在孙元素中*/
+
+
+/*百度logo部分*/
+
+article .packet .img_center .mi_img {
+    margin-top: 30px;
+    position: relative \9;
+    left: -135px \9;
+}
+
+article .packet .img_center .mi_img img {
+    width: 270px;
+    height: 129px;
+}
+
+
+/*百度输入框和按钮部分*/
+
+article .packet .mi_input {
+    width: 800px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 0px;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    display: -ms-flex;
+    -ms-justify-content: center;
+    display: flex;
+    justify-content: center;
+    /*加入兼容性样式*/
+    position: relative \9;
+    left: 50% \9;
+    clear: both \9;
+}
+
+article .packet .mi_input span {
+    display: inline-block;
+    /*加入行内块级元素才会有宽和高*/
+    width: 602px;
+    height: 36px;
+    position: relative;
+    left: -301px \9;
+}
+
+article .packet .mi_input .textarea {
+    width: 490px;
+    height: 14px;
+    border: 1px;
+    margin-left: -2px;
+    margin-right: -2px;
+    border: 1px solid #CCC;
+    outline: none;
+    padding: 10px 0;
+    padding-left: 10px;
+    /*通过添加padding可以调整光标的位置*/
+    float: left;
+}
+
+article .packet .mi_input img {
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+}
+
+article .packet .mi_input .img_l {
+    position: absolute;
+    right: 140px;
+    top: 7px;
+    right: 140px \9;
+    top: 10px \9;
+    /*针对不同IE版本进行微调*/
+}
+
+article .packet .mi_input .img_r {
+    position: absolute;
+    right: 110px;
+    top: 7px;
+    right: 110px \9;
+    top: 10px \9;
+}
+
+article .packet .submit {
+    margin-left: -2px;
+    width: 100px;
+    height: 36px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    float: left;
+}
+
+
+/*新加入的样式 focus*/
+
+article .packet .mi_input .textarea:focus {
+    border-color: blue;
+}
+
+article .packet .mi_input .textarea:hover {
+    border-color: black;
+}
+
+article .packet .mi_input span #blue:hover {
+    background-color: #1C65D4;
+}
+
+
+/*底部*/
+
+footer {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    display: -ms-flex;
+    -ms-justify-content: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    /*加入兼容性样式*/
+}
+
+
+/*所有块设置高度和间距*/
+
+footer div {
+    margin: 5px;
+    height: 100px;
+}
+
+footer div .grey {
+    color: rgb(149, 149, 149);
+    font-size: 12px;
+}
+
+footer div img {
+    height: 70px;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+
+/*最后一块*/
+
+footer .footer_out {
+    font-size: 10px;
+    color: rgb(149, 149, 149);
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: -moz-flex;
+    -moz-flex-direction: column;
+    display: -ms-flex;
+    -ms-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    /*加入兼容性样式*/
+}
+
+footer .footer_out img {
+    height: 12px;
+    width: 10px;
+}
+
+footer .footer_out .footer_in {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    /*加入兼容性样式*/
+    height: 20px;
+}
+
+
+/*此后5个是加入兼容IE的样式*/
+
+.footer_in div {
+    float: left;
+    height: 20px;
+    margin: 0px 20px;
+}
+
+footer .footer_out #f_in_he {
+    height: 20px;
+    text-align: left;
+}
+
+footer .f_c_o {
+    float: left \9;
+    position: relative \9;
+    left: 50% \9;
+    clear: both \9;
+    _position: relative;
+    _left: 50%;
+    _clear: both;
+}
+
+footer .f_c_o .f_c {
+    position: relative \9;
+    left: -50% \9;
+    _position: relative;
+    _left: -20%;
+    _clear: both;
+}
+
+footer .f_c_o .f_c #f_f {
+    float: left;
+    height: 70px;
+}

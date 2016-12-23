@@ -1,0 +1,142 @@
+/*因为psd的图源是1024宽度，所以设置了整体宽度*/
+body{
+	width: 1024px;
+}
+/*头部logo部分*/
+header .logo{
+	height: 195px;
+	width: 100%;
+	display: -webkit-flex;
+	justify-content: center;
+	background-image: url(../img/top_background.gif);
+	background-repeat: no-repeat;
+}
+header .logo .img{
+	height: 133px;
+	width: 352px;
+	background-image: url(../img/logo.gif);
+	background-repeat: no-repeat;
+	background-position: 54% 0%;
+	margin-top: 32px;
+}
+
+/*头部导航条*/
+header .navv{
+	height:41px;
+	width: 100%;
+	background-image:url(../img/navv.gif);
+	background-repeat: no-repeat;
+	background-position: 0 -155px;
+	display: -webkit-flex;
+	justify-content: center;
+}
+header .navv .list{
+	margin: 0 70px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+}
+header .navv .list a{
+	color: white;
+	cursor: pointer;
+}
+/*头部横幅*/
+header .banner{
+	height: 446px;
+	width: 100%;
+	background-image: url(../img/banner.gif);
+	background-repeat: no-repeat;
+	background-position: 0% 22%;
+}
+
+/*主体部分*/
+article{
+	width: 780px;
+	height: 500px;
+	margin:0 auto;
+	margin-top:30px;
+}
+
+/*上半部分横排3个*/
+article .top .span4 .imgL{
+	height: 73px;
+	width: 75px;
+	background-image: url(../img/icon.gif);
+	background-repeat: no-repeat;
+	background-position: -1% 0%;
+	float: left;
+}
+
+article .top .span4 .text{
+	height: 73px;
+	font-size: 12px;
+	position: relative;
+	left: 10px;
+}
+article .top .span4 hr{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+article .top .span4 span{
+	font-size: 12px;
+	text-align: top;
+}
+
+article .top .span4 .imgM{
+	height: 73px;
+	width: 75px;
+	background-image: url(../img/icon.gif);
+	background-repeat: no-repeat;
+	background-position: 27% 0%;
+	float: left;
+}
+
+article .top .span4 .imgR{
+	height: 73px;
+	width: 75px;
+	background-image: url(../img/icon.gif);
+	background-repeat: no-repeat;
+	background-position: 54% 0%;
+	float: left;
+}
+
+/*下半部分*/
+article .bottom{
+	margin-top: 40px;
+}
+
+article .bottom p{
+	margin-top: 10px;
+	color: #CCC;
+}
+
+article .bottom .span8 .goods .photo .span3 div{
+	width: 98px;
+	height: 99px;
+	margin-top: 20px;
+}
+
+article .bottom .span8 .goods .photo .span3 .photo1{
+	background-image: url(../img/goods.gif);
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+}
+
+article .bottom .span8 .goods .photo .span3 .photo2{
+	background-image: url(../img/goods.gif);
+	background-repeat: no-repeat;
+	background-position: 12% 0%;
+}
+
+article .bottom .span8 .goods .photo .span3 .photo3{
+	background-image: url(../img/goods.gif);
+	background-repeat: no-repeat;
+	background-position: 24% 0%;
+}
+
+article .bottom .span8 .goods .photo .span3 .photo4{
+	background-image: url(../img/goods.gif);
+	background-repeat: no-repeat;
+	background-position: 37% 0%;
+}

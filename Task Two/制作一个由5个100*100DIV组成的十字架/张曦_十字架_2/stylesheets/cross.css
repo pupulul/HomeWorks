@@ -1,0 +1,95 @@
+/*reset*/
+*{
+	margin: 0px;
+	padding:0px;
+}
+body{
+	height: 650px;
+	width: auto;
+}
+.square{
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top:50%;
+	margin-top:-150px;
+}
+.square_1,.square_2,.square_3,.square_4,.square_5{
+	width: 100px;
+	height: 100px;
+	float:left;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #FFCCFF;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.square_1,.square_5{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.square_1{
+	background-color: red;
+}
+.square_2{
+	background-color: green;
+}
+.square_3 img{
+	width: 24px;
+
+}
+.square_4{
+	background-color: blue;
+}
+.square_5{
+	background-color: yellow;
+}
+
+/*方法1
+.square_1,.square_2,.square_3,.square_4,.square_5{
+	width: 100px;
+	height: 100px;
+	float:left;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #FFCCFF;
+	text-align: center;
+	line-height: 100px;
+}
+.square_3 img{
+	width: 24px;
+	vertical-align: middle;
+	垂直居中的实现方法
+}
+*/
+
+/*方法2
+.square_1,.square_2,.square_3,.square_4,.square_5{
+	width: 100px;
+	height: 100px;
+	float:left;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #FFCCFF;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	webkit-box需要学习
+}
+*/
+
+/*方法3
+.square_1,.square_2,.square_3,.square_4,.square_5{
+	width: 100px;
+	height: 100px;
+	float:left;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #FFCCFF;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	display需要学习
+
+}
+*/

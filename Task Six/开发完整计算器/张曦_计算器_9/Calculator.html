@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- 北京 张曦 2016.6.26 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="StyleSheets/bootstrap.css">
+    <link rel="stylesheet" href="StyleSheets/Calculator.css">
+</head>
+
+<body>
+    <!-- 外部容器 -->
+    <div class="container">
+        <h1>Calculator V2.0</h1>
+        <!-- 公式显示区 -->
+        <div class="row"><span id="formula"></span></div>
+        <!-- 屏幕 -->
+        <div class="row"><span id="screen"></span></div>
+        <!-- 按钮 -->
+        <div class="row" id="button">
+            <div class="row">
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-danger" id="clear">清屏</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default math" id="sqrt">平方根</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="seven">7</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="eight">8</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="nine">9</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default doMath" id="add">＋</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default" id="pm">＋／－</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default math" id="sin">sin</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="four">4</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="five">5</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="six">6</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default doMath" id="subtract">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default doMath" id="pow">^</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default math" id="cos">cos</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="one">1</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="two">2</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="three">3</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default doMath" id="multiply">*</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default" id="Pi">Pi</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default math" id="tan">tan</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-primary" id="zero">0</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default" id="dot">.</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-success" id="result">=</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-block btn-default doMath" id="divide">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ／外部容器 -->
+    <!-- js -->
+    <script type="text/javascript" src="JavaScript/Calculator.js"></script>
+    <!-- /js -->
+</body>
+
+</html>

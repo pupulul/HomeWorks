@@ -1,0 +1,68 @@
+/*reset*/
+*{
+	margin:0;
+	padding: 0;
+}
+/*给3大块上色*/
+header{
+	height: 200px;
+	background-color: yellow;
+}
+article{
+	height: 400px;
+	background-color: aqua;
+	overflow: hidden;
+}
+footer{
+	height: 150px;
+	background-color: green;
+}
+
+/*开始布局*/
+/*middle会被挡住，所以没有上色*/
+article .middle{
+	float:left;
+	width: 100%;
+}
+
+article .left{
+	background-color: orange;
+	float:left;
+	width: 150px;
+	margin-left: -100%;
+	/*100%比例进入上一行左边*/
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+	/*将底部拉长*/
+}
+
+article .right{
+	background-color: red;
+	float: left;
+	width: 100px;
+	margin-left: -100px;
+	/*等身的像素进入上一行右边*/
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+}
+
+article .middle .inner{
+	background-color: blue;
+	margin-left: 150px;
+	margin-right: 100px;
+	/*通过推两边的方式实现双飞翼布局*/
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+	
+
+	display: flex;
+	justify-content: center;
+	/*太空了，加入了图片，居中处理*/
+}
+
+/*调整一下中间图片*/
+article .middle img{
+	width: 150px;
+	height: 200px;
+	margin:5px;
+}

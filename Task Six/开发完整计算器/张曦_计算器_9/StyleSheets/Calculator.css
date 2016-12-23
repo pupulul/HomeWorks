@@ -1,0 +1,34 @@
+/*一些细节调整，主要用的bootstrap*/
+.container {
+    border: 1px solid grey;
+    margin-top: 10%;
+    min-width:650px;
+}
+
+.container .row {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container #button .row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container .row span{
+	display: block;
+	margin-top: 5px;
+	height: 40px;
+	width: 100%;
+	border-radius: 5px;
+	background-color: lightblue;
+	text-align: right;
+	line-height: 40px;
+}
+.container .row #formula{
+	color: grey;
+	font-size: 20px;
+}
+.container .row #screen{
+		font-size: 30px;
+}

@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+    border: 1px solid lightsteelblue;
+    margin-top: 80px;
+    background-color: lightgoldenrodyellow;
+}
+
+.container h1,
+.container p {
+    color: lightslategrey;
+}
+
+.container input {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+}
+
+.container button {
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+}

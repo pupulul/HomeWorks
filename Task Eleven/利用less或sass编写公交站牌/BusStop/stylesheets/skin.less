@@ -1,0 +1,119 @@
+//常用颜色有四种，红绿白黑。
+@red: rgb(196, 47, 38);
+@green: rgb(37, 88, 42);
+@white: #ffffff;
+@black: #000000;
+//颜色
+.red_c {
+    color: @red;
+}
+
+.green_c {
+    color: @green;
+}
+
+.white_c {
+    color: @white;
+}
+
+.black_c {
+    color: @black;
+}
+
+//背景颜色
+.red_bc {
+    background-color: @red;
+}
+
+.green_bc {
+    background-color: @green;
+}
+
+.white_bc {
+    background-color: @white;
+}
+
+.black_bc {
+    background-color: @black;
+}
+
+//箭头
+.width_23_p:hover .ar_t {
+    border-bottom-color: @white;
+}
+
+.width_23_p:hover .ar_b {
+    background-color: @white;
+}
+
+.ar_t {
+    border-width: 10px;
+    border-style: solid;
+    border-top-color: @green;
+    border-left-color: @green;
+    border-right-color: @green;
+    border-bottom-color: @green;
+    font-size: 0px;
+}
+
+.ar_b {
+    width: 10px;
+    height: 10px;
+    background-color: @green;
+    font-size: 10px;
+}
+
+.ar_l {
+    background-color: @red;
+}
+
+.ar_m {
+    background-color: @red;
+}
+
+.ar_r {
+    border-left-color: @red;
+    border-bottom-color: @red;
+    border-top-color: @white;
+    border-right-color: @white;
+    border-width: 12px;
+    border-style: solid;
+    -webkit-transform: skew(50deg);
+}
+
+//车号
+.bus_number {
+    font-size: 160px;
+    &:extend(.no_margin);
+    position: relative;
+    left: 15%;
+    top: 7%;
+}
+
+//站名
+.bus_station {
+    &:extend(.no_margin);
+    &:extend(.font_size_40);
+}
+
+//字号
+.font_size_30 {
+    font-size: 30px;
+}
+
+.font_size_12 {
+    font-size: 12px;
+}
+
+.font_size_40 {
+    font-size: 40px;
+}
+
+//杂项
+.no_margin {
+    margin: 0;
+}
+
+.out{
+	border:1px solid black;
+}

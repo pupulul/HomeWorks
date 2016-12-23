@@ -1,0 +1,548 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*外围框架*/
+
+article {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /*破ie兼容这个*/
+    display:flex;
+    display: -moz-flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+/*五段动画 双耳 双眼 尾巴*/
+
+@-webkit-keyframes leftEar {
+    0% {
+        -webkit-transform: rotateZ(-12deg);
+    }
+    20% {
+        -webkit-transform: rotateZ(-24deg);
+    }
+    40% {
+        -webkit-transform: rotateZ(-36deg);
+    }
+    60% {
+        -webkit-transform: rotateZ(-24deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(-12deg);
+    }
+}
+
+@keyframes leftEar {
+    0% {
+        transform: rotateZ(-12deg);
+    }
+    20% {
+        transform: rotateZ(-24deg);
+    }
+    40% {
+        transform: rotateZ(-36deg);
+    }
+    60% {
+        transform: rotateZ(-24deg);
+    }
+    100% {
+        transform: rotateZ(-12deg);
+    }
+}
+
+@-moz-keyframes leftEar {
+    0% {
+        -moz-transform: rotateZ(-12deg);
+    }
+    20% {
+        -moz-transform: rotateZ(-24deg);
+    }
+    40% {
+        -moz-transform: rotateZ(-36deg);
+    }
+    60% {
+        -moz-transform: rotateZ(-24deg);
+    }
+    100% {
+        -moz-transform: rotateZ(-12deg);
+    }
+}
+
+@-webkit-keyframes rightEar {
+    0% {
+        -webkit-transform: rotateZ(12deg);
+    }
+    20% {
+        -webkit-transform: rotateZ(24deg);
+    }
+    40% {
+        -webkit-transform: rotateZ(36deg);
+    }
+    60% {
+        -webkit-transform: rotateZ(24deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(12deg);
+    }
+}
+
+@keyframes rightEar {
+    0% {
+        transform: rotateZ(12deg);
+    }
+    20% {
+        transform: rotateZ(24deg);
+    }
+    40% {
+        transform: rotateZ(36deg);
+    }
+    60% {
+        transform: rotateZ(24deg);
+    }
+    100% {
+        transform: rotateZ(12deg);
+    }
+}
+
+@-moz-keyframes rightEar {
+    0% {
+        -moz-transform: rotateZ(12deg);
+    }
+    20% {
+        -moz-transform: rotateZ(24deg);
+    }
+    40% {
+        -moz-transform: rotateZ(36deg);
+    }
+    60% {
+        -moz-transform: rotateZ(24deg);
+    }
+    100% {
+        -moz-transform: rotateZ(12deg);
+    }
+}
+
+@-webkit-keyframes leftEyeBall {
+    0% {
+        -webkit-transform: rotateX(0deg)
+    }
+    20% {
+        -webkit-transform: rotateX(45deg)
+    }
+    40% {
+        -webkit-transform: rotateX(90deg)
+    }
+    60% {
+        -webkit-transform: rotateX(45deg)
+    }
+    100% {
+        -webkit-transform: rotateX(0deg)
+    }
+}
+
+@keyframes leftEyeBall {
+    0% {
+        transform: rotateX(0deg)
+    }
+    20% {
+        transform: rotateX(45deg)
+    }
+    40% {
+        transform: rotateX(90deg)
+    }
+    60% {
+        transform: rotateX(45deg)
+    }
+    100% {
+        transform: rotateX(0deg)
+    }}
+
+@-moz-keyframes leftEyeBall {
+    0% {
+        -moz-transform: rotateX(0deg)
+    }
+    20% {
+        -moz-transform: rotateX(45deg)
+    }
+    40% {
+        -moz-transform: rotateX(90deg)
+    }
+    60% {
+        -moz-transform: rotateX(45deg)
+    }
+    100% {
+        -moz-transform: rotateX(0deg)
+    }
+}
+
+@-webkit-keyframes rightEyeBall {
+    0% {
+        -webkit-transform: rotateX(0deg)
+    }
+    20% {
+        -webkit-transform: rotateX(45deg)
+    }
+    40% {
+        -webkit-transform: rotateX(90deg)
+    }
+    60% {
+        -webkit-transform: rotateX(45deg)
+    }
+    100% {
+        -webkit-transform: rotateX(0deg)
+    }
+}
+
+@keyframes rightEyeBall {
+    0% {
+        transform: rotateX(0deg)
+    }
+    20% {
+        transform: rotateX(45deg)
+    }
+    40% {
+        transform: rotateX(90deg)
+    }
+    60% {
+        transform: rotateX(45deg)
+    }
+    100% {
+        transform: rotateX(0deg)
+    }
+}
+
+@-moz-keyframes rightEyeBall {
+    0% {
+        -moz-transform: rotateX(0deg)
+    }
+    20% {
+        -moz-transform: rotateX(45deg)
+    }
+    40% {
+        -moz-transform: rotateX(90deg)
+    }
+    60% {
+        -moz-transform: rotateX(45deg)
+    }
+    100% {
+        -moz-transform: rotateX(0deg)
+    }
+}
+
+@-webkit-keyframes tail {
+    0% {
+        -webkit-transform: rotateZ(-65deg) translateY(0px)
+    }
+    20% {
+        -webkit-transform: rotateZ(-45deg) translateY(-45px)
+    }
+    40% {
+        -webkit-transform: rotateZ(-25deg) translateY(-60px)
+    }
+    60% {
+        -webkit-transform: rotateZ(-45deg) translateY(-45px)
+    }
+    100% {
+        -webkit-transform: rotateZ(-65deg) translateY(0)
+    }}
+
+@keyframes tail {
+    0% {
+        transform: rotateZ(-65deg) translateY(0px)
+    }
+    20% {
+        transform: rotateZ(-45deg) translateY(-45px)
+    }
+    40% {
+        transform: rotateZ(-25deg) translateY(-60px)
+    }
+    60% {
+        transform: rotateZ(-45deg) translateY(-45px)
+    }
+    100% {
+        transform: rotateZ(-65deg) translateY(0)
+    }
+}
+
+@-moz-keyframes tail {
+    0% {
+        -moz-transform: rotateZ(-65deg) translateY(0px)
+    }
+    20% {
+        -moz-transform: rotateZ(-45deg) translateY(-45px)
+    }
+    40% {
+        -moz-transform: rotateZ(-25deg) translateY(-60px)
+    }
+    60% {
+        -moz-transform: rotateZ(-45deg) translateY(-45px)
+    }
+    100% {
+        -moz-transform: rotateZ(-65deg) translateY(0)
+    }}
+
+
+/*头部*/
+
+.head {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #000;
+}
+
+
+/*左眼*/
+
+.left_eye {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+
+/*右眼*/
+
+.right_eye {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    bottom: 15px;
+}
+
+
+/*左眼球*/
+
+.left_eye_ball {
+    width: 8px;
+    height: 8px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    position: relative;
+    left: 8px;
+    top: 5px;
+    -webkit-animation-name: leftEyeBall;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: leftEyeBall;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 3s;
+    animation-name: leftEyeBall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -ms-animation-name: leftEyeBall;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-duration: 3s;
+}
+
+
+/*右眼球*/
+
+.right_eye_ball {
+    width: 8px;
+    height: 8px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    position: relative;
+    left: 2px;
+    top: 5px;
+    -webkit-animation-name: rightEyeBall;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: rightEyeBall;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 3s;
+    animation-name: rightEyeBall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -ms-animation-name: rightEyeBall;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-duration: 3s;
+}
+
+
+/*左耳*/
+
+.left_ear {
+    width: 80px;
+    height: 40px;
+    border: 10px solid #000;
+    border-radius: 50%;
+    position: relative;
+    right: 160px;
+    bottom: 55px;
+    -webkit-transform: rotateZ(-12deg);
+    transform: rotateZ(-12deg);
+    -moz-transform: rotateZ(-12deg);
+    -ms-transform: rotateZ(-12deg);
+
+    -webkit-animation-name: leftEar;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: leftEar;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 3s;
+    animation-name: leftEar;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -ms-animation-name: leftEar;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-duration: 3s;
+}
+
+
+/*右耳*/
+
+.right_ear {
+    width: 70px;
+    height: 40px;
+    border: 10px solid #000;
+    border-radius: 50%;
+    position: relative;
+    right: 160px;
+    bottom: 55px;
+    -webkit-transform: rotateZ(12deg);
+    transform: rotateZ(12deg);
+    -moz-transform: rotateZ(12deg);
+    -ms-transform: rotateZ(12deg);
+    -webkit-animation-name: rightEar;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: rightEar;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 3s;
+    animation-name: rightEar;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -ms-animation-name: rightEar;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-duration: 3s;
+}
+
+
+/*鼻子*/
+
+.nose {
+    width: 20px;
+    height: 20px;
+    border: 12px solid #000;
+    border-radius: 50%;
+    position: relative;
+    right: 275px;
+    top: 90px;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+
+/*身体*/
+
+.body {
+    width: 70px;
+    height: 70px;
+    border: 10px solid #000;
+    position: relative;
+    right: 340px;
+    top: 120px;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    z-index: 9;
+    background-color: #FFF;
+}
+
+
+/*左脚*/
+
+.left_feet {
+    width: 70px;
+    height: 20px;
+    border-radius: 50%;
+    border: 10px solid #000;
+    position: relative;
+    right: 470px;
+    top: 200px;
+    z-index: 8;
+    background-color: #FFF;
+}
+
+
+/*右脚*/
+
+.right_feet {
+    width: 70px;
+    height: 20px;
+    border-radius: 50%;
+    border: 10px solid #000;
+    position: relative;
+    right: 470px;
+    top: 200px;
+    z-index: 8;
+    background-color: #FFF;
+}
+
+
+/*尾巴*/
+
+.tail {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #000;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 90%;
+    border-top-right-radius: 90%;
+    position: relative;
+    right: 730px;
+    top: 140px;
+    -webkit-transform: rotateZ(-65deg);
+    transform: rotateZ(-65deg);
+    -moz-transform: rotateZ(-65deg);
+    -ms-transform: rotateZ(-65deg);
+    z-index: 1;
+    -webkit-animation-name: tail;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: tail;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 3s;
+    animation-name: tail;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -ms-animation-name: tail;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-duration: 3s;
+}
