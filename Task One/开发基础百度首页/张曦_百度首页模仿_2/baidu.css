@@ -1,0 +1,135 @@
+#All {
+    /*外层整体*/
+    width: 100%;
+    height: 640px;
+    margin: 0px;
+}
+
+#top_list {
+    /*顶端文字div*/
+    width: 100%;
+    height: 10%;
+    margin: 0px;
+}
+
+#top {
+    /*顶端文字table*/
+    float: right;
+    font-size: 14px;
+}
+
+#top_list a {
+    /*顶端链接未点击时是灰色*/
+    color: black;
+}
+
+#last {
+    background-color: rgb(51, 136, 255);
+}
+#last a{
+    color: #FFF;
+}
+
+#body {
+    /*中间主体div*/
+    width: 100%;
+    height: 80%;
+}
+
+img {
+    /*百度logo*/
+    width: 270px;
+    height: 129px;
+    margin-top: 20px;
+}
+
+#enter {
+    /*搜索输入框*/
+    width: 600px;
+    height: 40px;
+    margin-left: 350px;
+    margin-top: 20px;
+    margin-right: -2px;
+}
+
+#button {
+    /*搜索按钮*/
+    color: #FFF;
+    margin-top: 0px;
+    width: 100px;
+    height: 46px;
+    font-size: 14px;
+    background-color: rgb(52, 136, 255);
+    margin-left: -2px;
+}
+
+.im {
+    width: 60px;
+    height: 60px;
+}
+
+.up {
+    font-size: 12px;
+}
+
+.down {
+    font-size: 12px;
+}
+
+#foot_table {
+    height: 10%;
+    text-align: center;
+    margin-left: 25%;
+}
+#foot_table img{
+    /*足部二维码大小*/
+    width:60px;
+    height:60px;
+}
+
+.foot_div {
+    /*五个足部块*/
+    height: 50px;
+    float: left;
+    margin-left:30px;
+}
+
+#text_grey {
+    color: rgb(186, 186, 186);
+    font-size: 14px;
+    text-align: left;
+}
+
+b {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+#foot_two {
+    padding-top: 25px;
+    margin-left: 10px;
+}
+
+#foot_four {
+    padding-top: 25px;
+    margin-left: 10px;
+}
+
+#foot_two p {
+    margin-top: 5px;
+}
+
+#foot_four p {
+    margin-top: 5px;
+}
+
+#foot_five a {
+    color: rgb(186, 186, 186);
+}
+#foot_five img{
+
+    width:14px;
+    height:18px;
+    margin:0px;
+}
