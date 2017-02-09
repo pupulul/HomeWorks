@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    max-width: 500px;
+    /*最小宽度和最大宽度*/
+}
+
+html{
+    font-size:62.5%;
+    /*设置这个以后1rem=10px;*/
+    font-family: arial;
+}
+/*title*/
+
+header {
+    width: 100%;
+    height: 44px;
+    background-color: #3e98f0;
+}
+
+header .title {
+    height: 44px;
+    background-image: url(../images/bg-news-logo_344ce44.png);
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+}
+
+header .title div {
+    height: 44px;
+}
+
+header .title .left {
+    float: left;
+}
+
+header .title .right {
+    float: right;
+}
+
+header .title div .btn {
+    display: inline-block;
+    width: 34px;
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 44px;
+    background-image: url(../images/bg-new-toolbar_6e9bc53.png);
+    background-size: 40px 500px;
+    cursor: pointer;
+}
+
+header .title div .logo {
+    background-position: center 4px;
+}
+
+header .title div .login {
+    background-position: center -463px;
+}
+
+header .title div .search {
+    background-position: center -162px;
+}
+
+header .title div .more {
+    background-position: center -107px;
+}
+
+
+/*nav*/
+
+header .nav div .col-xs-3 {
+    background-color: #3e98f0;
+    height: 44px;
+    text-align: center;
+}
+
+header .nav div .col-xs-3 span {
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 44px;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom {
+    border-bottom: 2px solid white;
+}
+
+
+/*article*/
+
+article {
+    margin-top: 44px;
+}
+
+article .showUp {
+    width: 90%;
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+    margin:2rem auto; 
+}
+
+article .showUp .newsimg {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    /*background-color: red;*/
+}
+
+article .showUp .newstitle {
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 90px;
+    top: 0;
+    padding-left: 15px;
+    /*background-color: blue;*/
+}
+
+article .showUp .newscontent {
+    height: 70px;
+    padding-left: 10px;
+    /*background-color: green;*/
+}
+
+article .showUp .addtime {
+    /*background-color: orange;*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+article .showUp .deleteNews {
+    display: inline-block;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+}
+
+article .showUp .deleteNews span {
+    margin-right: 5px;
+}
+
+/*首图片放大*/
+article section:nth-child(2){
+    width:100%;
+    height: 25rem;
+}
+article section:nth-child(2) .newsimg{
+    display: block;
+    width: 100%;
+    height: 20rem;
+}
+article section:nth-child(2) .newstitle{
+    position: static !important;
+    display: block;
+    height: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+article section:nth-child(2) .addtime{
+    display: none;
+}
+
+article section:nth-child(2) .newscontent{
+    margin:0;
+    padding:10px;
+}
+
+/*切换*/
+
+article .formShowUp {
+    margin-top: 88px;
+}
+
+article .formShowUp p {
+    display: block;
+    height: 40px;
+    text-align: center;
+}
+
+article .formShowUp p label {
+    float: left;
+    line-height: 40px;
+}
+
+article .formShowUp p input {
+    line-height: 20px;
+    padding-left: 5px;
+    margin-top: 9px;
+    border: 1px solid #ccc;
+}
+
+article .formShowUp p textarea {
+    border: 1px solid #ccc;
+    height: 20px;
+    margin-top: 9px;
+    padding-left: 5px;
+}
+
+article .formShowUp p .btn {
+    margin: 0;
+    background-color: #ccc;
+    border: none;
+    height: 38px;
+    width: 40%;
+    color: #fff;
+}
+
+.top {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background: #888;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 3rem;
+    display: none;
+}
+
+.top:hover {
+    background: #093;
+}

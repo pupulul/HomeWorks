@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 移动端适配 -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>百度新闻模拟</title>
+
+	<link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/news.css">
+
+
+</head>
+<body>
+	<header>
+		<!-- title -->
+		<div class="title">
+			<div class="left">
+				<div class="btn logo"></div>
+				<div class="btn login"></div>
+			</div>
+			<div class="right">
+				<div class="btn search"></div>
+				<div class="btn more"></div>
+			</div>
+		</div>
+		<!-- /title -->
+		<!-- nav -->
+		<div class="nav container-fluid">
+			<div class="row">
+				<div class="col-xs-3 bottom"><span class="list">推荐</span></div>
+				<div class="col-xs-3 "><span class="list">百家</span></div>
+				<div class="col-xs-3"><span class="list">本地</span></div>
+				<div class="col-xs-3"><span class="list">更多</span></div>
+				<div class="outer hide">
+				<div class="col-xs-3"><span class="list">国际</span></div>
+				<div class="col-xs-3 "><span class="list">体育</span></div>
+				<div class="col-xs-3"><span class="list">娱乐</span></div>
+				<div class="col-xs-3"><span class="list">设置</span></div>
+				</div>	
+			</div>
+		</div>
+		<!-- /nav -->
+	</header>
+	<!-- article -->
+	<article id="article">
+<!--    <section class="showUp">
+			<img src="#" class="newsimg">
+			<label class="newstitle">随便一个标题</label>
+			<span class="newscontent"></span>
+			<span id="result" class="addtime">2015-12-02</span>
+			<div class="deleteNews hide">
+				<span class="newsid hide"></span>
+				<span class="deleSpan">删除</span>
+				<span class="updaSpan">修改</span>
+			</div>
+		</section> -->
+
+
+		<form class="formShowUp hide" method="post">
+			<p>
+				<label for="newstitle">新闻标题</label>
+				<input type="text" name="newstitle" id="newstitle"></input>
+			</p>
+			<p>
+				<label for="newsimg">图片地址</label>
+				<input type="text" name="newsimg" id="newsimg"></input>
+			</p>
+			<p>
+				<label for="newscontent">新闻内容</label>
+				<textarea type="text" name="newscontent" id="newscontent"></textarea>
+			</p>
+			<p>
+				<label for="addtime">添加时间</label>
+				<input type="date" name="addtime" id="addtime"></input>
+			</p>
+			<p>
+				<label for="class">新闻类型</label>
+				<input type="radio" name="classInfo" value="百家" class="class" checked="checked">百家</input>
+				<input type="radio" name="classInfo" value="本地" class="class">本地</input>
+				<input type="radio" name="classInfo" value="国际" class="class">国际</input>
+				<input type="radio" name="classInfo" value="体育" class="class">体育</input>
+				<input type="radio" name="classInfo" value="娱乐" class="class">娱乐</input>
+			</p>
+			<p>
+				<input type="button" class="btn" id="btnsubmit" value="提交"></input>
+				<input type="reset" class="btn" value="重置"></input>
+			</p>
+		</form>
+	</article>
+	<!-- /article -->
+	<!-- 返回顶部 -->
+	<a href="javascript:;" class="top">⬆️</a>
+	<!-- ／返回顶部 -->
+	<!-- js -->
+	<script type="text/javascript" src="./javascripts/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="./javascripts/main.js"></script>
+</body>
+</html>
