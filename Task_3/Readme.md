@@ -6,5 +6,5 @@ Learn and practice css hack position animation & Flying Swing Layout
 
 * `baiduBasicV3.0` :浏览器兼容性CSS hack练习。
 * `doubleWings` :双飞翼布局练习；
-* `MagicCube` :动画属性练习；
+* `MagicCube` :动画属性练习，了解css3D坐标轴；
 * `sketch` :动画属性练习；
